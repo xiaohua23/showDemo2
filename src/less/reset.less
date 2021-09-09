@@ -1,0 +1,186 @@
+[v-cloak] {
+  display: none;
+}
+
+* {
+  // touch-action: pan-y;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  // font-family: "Helvetica Neue", "Microsoft YaHei", Helvetica, STHeiTi, Arial;
+  font-family: PingFangSC-Regular, sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+.transition-body {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-action: none;
+  font-family: "DIN";
+  height: 100vh;
+}
+img {
+  border: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+input,
+select,
+button,
+textarea {
+  border: none;
+  outline: 0;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.box {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+
+.box-align {
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+}
+.box-pack {
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  -o-box-pack: center;
+  box-pack: center;
+}
+
+.box-justify {
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  box-pack: justify;
+}
+
+.box-end {
+  -moz-box-pack: end;
+  -webkit-box-pack: end;
+  -o-box-pack: end;
+  box-pack: end;
+}
+
+.box-flex {
+  -webkit-box-flex: 1;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#weiboMask {
+  background-image: url('../assets/share-mask.png');
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: 50% 5%;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}

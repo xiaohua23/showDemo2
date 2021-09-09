@@ -1,0 +1,61 @@
+{
+  "name": "hitv-template-activity",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://app.mgtv.com/2020/red-packet-h5/",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "up": "vue-cli-service build && sh ~/updev.sh"
+  },
+  "dependencies": {
+    "@sentry/browser": "^5.20.1",
+    "@sentry/integrations": "^5.20.0",
+    "compressorjs": "^1.0.7",
+    "core-js": "^3.3.2",
+    "es6-promise": "^4.2.8",
+    "exif-js": "^2.3.0",
+    "image-rotation": "^1.0.6",
+    "jquery": "^1.6.2",
+    "jsonp": "^0.2.1",
+    "less-loader": "^5.0.0",
+    "md5": "^2.3.0",
+    "swiper": "^3.4.0",
+    "throttle-debounce": "^3.0.1",
+    "tua-body-scroll-lock": "^1.2.1",
+    "vue": "^2.6.10",
+    "vue-count-to": "^1.0.13",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.4.3",
+    "postcss-pxtorem": "^4.0.1",
+    "universal-repo-config": "https://registry.nlark.com/universal-repo-config/download/universal-repo-config-1.0.5.tgz",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "lint-staged": {
+    "**/**.{js,jsx,ts,json,pcss,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "**/**.{css}": [
+      "stylelint --fix",
+      "git add"
+    ]
+  }
+}
